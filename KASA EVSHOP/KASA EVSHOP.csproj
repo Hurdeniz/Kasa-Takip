@@ -1,0 +1,800 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CA015DC5-F11E-42DE-BE32-7067F55AD59D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KASA_EVSHOP</RootNamespace>
+    <AssemblyName>KASA EVSHOP</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>iconfinder_Finance_safe_1889198.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Pdf.v21.2.Core, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Office.v21.2.Core, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v21.2.Core, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v21.2.Export, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v21.2.Core, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v21.2, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.Desktop.v21.2, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v21.2, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v21.2, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v21.2, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v21.2, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v21.2, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v21.2, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Deployment">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FRM_ANA_SAYFA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_ANA_SAYFA.Designer.cs">
+      <DependentUpon>FRM_ANA_SAYFA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_DETAY_ELDEN_GELECEK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_DETAY_ELDEN_GELECEK.Designer.cs">
+      <DependentUpon>FRM_DETAY_ELDEN_GELECEK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_DETAY_ELDEN_GELECEK_GUNCELLE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_DETAY_ELDEN_GELECEK_GUNCELLE.Designer.cs">
+      <DependentUpon>FRM_DETAY_ELDEN_GELECEK_GUNCELLE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_DETAY_ELDEN_GELECEK_KISMI_ODEME.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_DETAY_ELDEN_GELECEK_KISMI_ODEME.Designer.cs">
+      <DependentUpon>FRM_DETAY_ELDEN_GELECEK_KISMI_ODEME.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_DETAY_ELDEN_GELECEK_ODEME_AL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_DETAY_ELDEN_GELECEK_ODEME_AL.Designer.cs">
+      <DependentUpon>FRM_DETAY_ELDEN_GELECEK_ODEME_AL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_DETAY_ELDEN_GELEN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_DETAY_ELDEN_GELEN.Designer.cs">
+      <DependentUpon>FRM_DETAY_ELDEN_GELEN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_DETAY_E_GELECEK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_DETAY_E_GELECEK.Designer.cs">
+      <DependentUpon>FRM_DETAY_E_GELECEK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_DETAY_FIRMA_ODEME.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_DETAY_FIRMA_ODEME.Designer.cs">
+      <DependentUpon>FRM_DETAY_FIRMA_ODEME.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_DETAY_FIRMA_ODEME_GUNCELLE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_DETAY_FIRMA_ODEME_GUNCELLE.Designer.cs">
+      <DependentUpon>FRM_DETAY_FIRMA_ODEME_GUNCELLE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_DETAY_KART.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_DETAY_KART.Designer.cs">
+      <DependentUpon>FRM_DETAY_KART.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_DETAY_KART_GUNCELLE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_DETAY_KART_GUNCELLE.Designer.cs">
+      <DependentUpon>FRM_DETAY_KART_GUNCELLE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_DETAY_KASA_CIKIS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_DETAY_KASA_CIKIS.Designer.cs">
+      <DependentUpon>FRM_DETAY_KASA_CIKIS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_DETAY_MASRAF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_DETAY_MASRAF.Designer.cs">
+      <DependentUpon>FRM_DETAY_MASRAF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_DETAY_MASRAF_GUNCELLE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_DETAY_MASRAF_GUNCELLE.Designer.cs">
+      <DependentUpon>FRM_DETAY_MASRAF_GUNCELLE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_DETAY_MERKEZ_ODEME.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_DETAY_MERKEZ_ODEME.Designer.cs">
+      <DependentUpon>FRM_DETAY_MERKEZ_ODEME.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_DETAY_MERKEZ_ODEME_GUNCELLE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_DETAY_MERKEZ_ODEME_GUNCELLE.Designer.cs">
+      <DependentUpon>FRM_DETAY_MERKEZ_ODEME_GUNCELLE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_DETAY_PARA_YATIRMA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_DETAY_PARA_YATIRMA.Designer.cs">
+      <DependentUpon>FRM_DETAY_PARA_YATIRMA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_DETAY_PARA_YATIRMA_GUNCELLE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_DETAY_PARA_YATIRMA_GUNCELLE.Designer.cs">
+      <DependentUpon>FRM_DETAY_PARA_YATIRMA_GUNCELLE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_DETAY_PESIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_DETAY_PESIN.Designer.cs">
+      <DependentUpon>FRM_DETAY_PESIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_DETAY_PESINAT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_DETAY_PESINAT.Designer.cs">
+      <DependentUpon>FRM_DETAY_PESINAT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_DETAY_PESINAT_GUNCELLE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_DETAY_PESINAT_GUNCELLE.Designer.cs">
+      <DependentUpon>FRM_DETAY_PESINAT_GUNCELLE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_DETAY_PESINAT_IADE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_DETAY_PESINAT_IADE.Designer.cs">
+      <DependentUpon>FRM_DETAY_PESINAT_IADE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_DETAY_PESINAT_IADE_GUNCELLE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_DETAY_PESINAT_IADE_GUNCELLE.Designer.cs">
+      <DependentUpon>FRM_DETAY_PESINAT_IADE_GUNCELLE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_DETAY_PESIN_GUNCELLE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_DETAY_PESIN_GUNCELLE.Designer.cs">
+      <DependentUpon>FRM_DETAY_PESIN_GUNCELLE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_DETAY_TAKSIT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_DETAY_TAKSIT.Designer.cs">
+      <DependentUpon>FRM_DETAY_TAKSIT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_ELDEN_GELECEK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_ELDEN_GELECEK.Designer.cs">
+      <DependentUpon>FRM_ELDEN_GELECEK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_FIRMA_ODEMESI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_FIRMA_ODEMESI.Designer.cs">
+      <DependentUpon>FRM_FIRMA_ODEMESI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_KART.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_KART.Designer.cs">
+      <DependentUpon>FRM_KART.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_KASA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_KASA.Designer.cs">
+      <DependentUpon>FRM_KASA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_KASA_ACIKLAR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_KASA_ACIKLAR.Designer.cs">
+      <DependentUpon>FRM_KASA_ACIKLAR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_KASA_CIKIS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_KASA_CIKIS.Designer.cs">
+      <DependentUpon>FRM_KASA_CIKIS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_KASA_RAPOR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_KASA_RAPOR.Designer.cs">
+      <DependentUpon>FRM_KASA_RAPOR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_KASA_RAPOR_GUNCELLE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_KASA_RAPOR_GUNCELLE.Designer.cs">
+      <DependentUpon>FRM_KASA_RAPOR_GUNCELLE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_KASA_TAKSIT_KUCUK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_KASA_TAKSIT_KUCUK.Designer.cs">
+      <DependentUpon>FRM_KASA_TAKSIT_KUCUK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_KASA_TOPLA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_KASA_TOPLA.Designer.cs">
+      <DependentUpon>FRM_KASA_TOPLA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_KULLANICI_GIRIS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_KULLANICI_GIRIS.Designer.cs">
+      <DependentUpon>FRM_KULLANICI_GIRIS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_MAIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_MAIN.Designer.cs">
+      <DependentUpon>FRM_MAIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_MASRAF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_MASRAF.Designer.cs">
+      <DependentUpon>FRM_MASRAF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_MEMNUNIYET.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_MEMNUNIYET.Designer.cs">
+      <DependentUpon>FRM_MEMNUNIYET.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_MERKEZ_ODEME.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_MERKEZ_ODEME.Designer.cs">
+      <DependentUpon>FRM_MERKEZ_ODEME.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_PARA_YATIRMA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_PARA_YATIRMA.Designer.cs">
+      <DependentUpon>FRM_PARA_YATIRMA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_PERSONELLER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_PERSONELLER.Designer.cs">
+      <DependentUpon>FRM_PERSONELLER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_PERSONEL_CIKISLAR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_PERSONEL_CIKISLAR.Designer.cs">
+      <DependentUpon>FRM_PERSONEL_CIKISLAR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_PERSONEL_CIKIS_VER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_PERSONEL_CIKIS_VER.Designer.cs">
+      <DependentUpon>FRM_PERSONEL_CIKIS_VER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_PERSONEL_GUNCELLE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_PERSONEL_GUNCELLE.Designer.cs">
+      <DependentUpon>FRM_PERSONEL_GUNCELLE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_PERSONEL_MAAS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_PERSONEL_MAAS.Designer.cs">
+      <DependentUpon>FRM_PERSONEL_MAAS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_PERSONEL_SHIFT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_PERSONEL_SHIFT.Designer.cs">
+      <DependentUpon>FRM_PERSONEL_SHIFT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_PERSONEL_SHIFT_GUNCELLE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_PERSONEL_SHIFT_GUNCELLE.Designer.cs">
+      <DependentUpon>FRM_PERSONEL_SHIFT_GUNCELLE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_PERSONEL_TAKIP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_PERSONEL_TAKIP.Designer.cs">
+      <DependentUpon>FRM_PERSONEL_TAKIP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_PERSONEL_YENI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_PERSONEL_YENI.Designer.cs">
+      <DependentUpon>FRM_PERSONEL_YENI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_PESIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_PESIN.Designer.cs">
+      <DependentUpon>FRM_PESIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_PESINAT_AL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_PESINAT_AL.Designer.cs">
+      <DependentUpon>FRM_PESINAT_AL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_PESINAT_IADE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_PESINAT_IADE.Designer.cs">
+      <DependentUpon>FRM_PESINAT_IADE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_RAPOR_ARAMALAR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_RAPOR_ARAMALAR.Designer.cs">
+      <DependentUpon>FRM_RAPOR_ARAMALAR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_RAPOR_ARAMALAR_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_RAPOR_ARAMALAR_EXCEL.Designer.cs">
+      <DependentUpon>FRM_RAPOR_ARAMALAR_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_RAPOR_ARAMALAR_YENI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_RAPOR_ARAMALAR_YENI.Designer.cs">
+      <DependentUpon>FRM_RAPOR_ARAMALAR_YENI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_RAPOR_ARAMA_GUNCELLE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_RAPOR_ARAMA_GUNCELLE.Designer.cs">
+      <DependentUpon>FRM_RAPOR_ARAMA_GUNCELLE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_RAPOR_CIKISLAR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_RAPOR_CIKISLAR.Designer.cs">
+      <DependentUpon>FRM_RAPOR_CIKISLAR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_RAPOR_GENEL_KASA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_RAPOR_GENEL_KASA.Designer.cs">
+      <DependentUpon>FRM_RAPOR_GENEL_KASA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_RAPOR_KASA_DETAY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_RAPOR_KASA_DETAY.Designer.cs">
+      <DependentUpon>FRM_RAPOR_KASA_DETAY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_RAPOR_YENI_CIKIS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_RAPOR_YENI_CIKIS.Designer.cs">
+      <DependentUpon>FRM_RAPOR_YENI_CIKIS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_RAPOR_YENI_CIKIS_KULLANICI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_RAPOR_YENI_CIKIS_KULLANICI.Designer.cs">
+      <DependentUpon>FRM_RAPOR_YENI_CIKIS_KULLANICI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_SEVKIYAT_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_SEVKIYAT_1.Designer.cs">
+      <DependentUpon>FRM_SEVKIYAT_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_SEVKIYAT_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_SEVKIYAT_2.Designer.cs">
+      <DependentUpon>FRM_SEVKIYAT_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_SEVKIYAT_GUNCELLE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_SEVKIYAT_GUNCELLE.Designer.cs">
+      <DependentUpon>FRM_SEVKIYAT_GUNCELLE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_SEVKIYAT_LISTESI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_SEVKIYAT_LISTESI.Designer.cs">
+      <DependentUpon>FRM_SEVKIYAT_LISTESI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_SEVKIYAT_LISTESI_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_SEVKIYAT_LISTESI_EXCEL.Designer.cs">
+      <DependentUpon>FRM_SEVKIYAT_LISTESI_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_SEVKIYAT_OLUSTUR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_SEVKIYAT_OLUSTUR.Designer.cs">
+      <DependentUpon>FRM_SEVKIYAT_OLUSTUR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_SHIFT_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_SHIFT_EXCEL.Designer.cs">
+      <DependentUpon>FRM_SHIFT_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_SIFRE_DEGISTIR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_SIFRE_DEGISTIR.Designer.cs">
+      <DependentUpon>FRM_SIFRE_DEGISTIR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_TAKSIT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_TAKSIT.Designer.cs">
+      <DependentUpon>FRM_TAKSIT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_YENI_NOT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_YENI_NOT.Designer.cs">
+      <DependentUpon>FRM_YENI_NOT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OLEDB_BAGLANTI.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FRM_ANA_SAYFA.resx">
+      <DependentUpon>FRM_ANA_SAYFA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_DETAY_ELDEN_GELECEK.resx">
+      <DependentUpon>FRM_DETAY_ELDEN_GELECEK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_DETAY_ELDEN_GELECEK_GUNCELLE.resx">
+      <DependentUpon>FRM_DETAY_ELDEN_GELECEK_GUNCELLE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_DETAY_ELDEN_GELECEK_KISMI_ODEME.resx">
+      <DependentUpon>FRM_DETAY_ELDEN_GELECEK_KISMI_ODEME.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_DETAY_ELDEN_GELECEK_ODEME_AL.resx">
+      <DependentUpon>FRM_DETAY_ELDEN_GELECEK_ODEME_AL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_DETAY_ELDEN_GELEN.resx">
+      <DependentUpon>FRM_DETAY_ELDEN_GELEN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_DETAY_E_GELECEK.resx">
+      <DependentUpon>FRM_DETAY_E_GELECEK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_DETAY_FIRMA_ODEME.resx">
+      <DependentUpon>FRM_DETAY_FIRMA_ODEME.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_DETAY_FIRMA_ODEME_GUNCELLE.resx">
+      <DependentUpon>FRM_DETAY_FIRMA_ODEME_GUNCELLE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_DETAY_KART.resx">
+      <DependentUpon>FRM_DETAY_KART.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_DETAY_KART_GUNCELLE.resx">
+      <DependentUpon>FRM_DETAY_KART_GUNCELLE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_DETAY_KASA_CIKIS.resx">
+      <DependentUpon>FRM_DETAY_KASA_CIKIS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_DETAY_MASRAF.resx">
+      <DependentUpon>FRM_DETAY_MASRAF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_DETAY_MASRAF_GUNCELLE.resx">
+      <DependentUpon>FRM_DETAY_MASRAF_GUNCELLE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_DETAY_MERKEZ_ODEME.resx">
+      <DependentUpon>FRM_DETAY_MERKEZ_ODEME.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_DETAY_MERKEZ_ODEME_GUNCELLE.resx">
+      <DependentUpon>FRM_DETAY_MERKEZ_ODEME_GUNCELLE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_DETAY_PARA_YATIRMA.resx">
+      <DependentUpon>FRM_DETAY_PARA_YATIRMA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_DETAY_PARA_YATIRMA_GUNCELLE.resx">
+      <DependentUpon>FRM_DETAY_PARA_YATIRMA_GUNCELLE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_DETAY_PESIN.resx">
+      <DependentUpon>FRM_DETAY_PESIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_DETAY_PESINAT.resx">
+      <DependentUpon>FRM_DETAY_PESINAT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_DETAY_PESINAT_GUNCELLE.resx">
+      <DependentUpon>FRM_DETAY_PESINAT_GUNCELLE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_DETAY_PESINAT_IADE.resx">
+      <DependentUpon>FRM_DETAY_PESINAT_IADE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_DETAY_PESINAT_IADE_GUNCELLE.resx">
+      <DependentUpon>FRM_DETAY_PESINAT_IADE_GUNCELLE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_DETAY_PESIN_GUNCELLE.resx">
+      <DependentUpon>FRM_DETAY_PESIN_GUNCELLE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_DETAY_TAKSIT.resx">
+      <DependentUpon>FRM_DETAY_TAKSIT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_ELDEN_GELECEK.resx">
+      <DependentUpon>FRM_ELDEN_GELECEK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_FIRMA_ODEMESI.resx">
+      <DependentUpon>FRM_FIRMA_ODEMESI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_KART.resx">
+      <DependentUpon>FRM_KART.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_KASA.resx">
+      <DependentUpon>FRM_KASA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_KASA_ACIKLAR.resx">
+      <DependentUpon>FRM_KASA_ACIKLAR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_KASA_CIKIS.resx">
+      <DependentUpon>FRM_KASA_CIKIS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_KASA_RAPOR.resx">
+      <DependentUpon>FRM_KASA_RAPOR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_KASA_RAPOR_GUNCELLE.resx">
+      <DependentUpon>FRM_KASA_RAPOR_GUNCELLE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_KASA_TAKSIT_KUCUK.resx">
+      <DependentUpon>FRM_KASA_TAKSIT_KUCUK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_KASA_TOPLA.resx">
+      <DependentUpon>FRM_KASA_TOPLA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_KULLANICI_GIRIS.resx">
+      <DependentUpon>FRM_KULLANICI_GIRIS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_MAIN.resx">
+      <DependentUpon>FRM_MAIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_MASRAF.resx">
+      <DependentUpon>FRM_MASRAF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_MEMNUNIYET.resx">
+      <DependentUpon>FRM_MEMNUNIYET.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_MERKEZ_ODEME.resx">
+      <DependentUpon>FRM_MERKEZ_ODEME.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_PARA_YATIRMA.resx">
+      <DependentUpon>FRM_PARA_YATIRMA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_PERSONELLER.resx">
+      <DependentUpon>FRM_PERSONELLER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_PERSONEL_CIKISLAR.resx">
+      <DependentUpon>FRM_PERSONEL_CIKISLAR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_PERSONEL_CIKIS_VER.resx">
+      <DependentUpon>FRM_PERSONEL_CIKIS_VER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_PERSONEL_GUNCELLE.resx">
+      <DependentUpon>FRM_PERSONEL_GUNCELLE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_PERSONEL_MAAS.resx">
+      <DependentUpon>FRM_PERSONEL_MAAS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_PERSONEL_SHIFT.resx">
+      <DependentUpon>FRM_PERSONEL_SHIFT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_PERSONEL_SHIFT_GUNCELLE.resx">
+      <DependentUpon>FRM_PERSONEL_SHIFT_GUNCELLE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_PERSONEL_TAKIP.resx">
+      <DependentUpon>FRM_PERSONEL_TAKIP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_PERSONEL_YENI.resx">
+      <DependentUpon>FRM_PERSONEL_YENI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_PESIN.resx">
+      <DependentUpon>FRM_PESIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_PESINAT_AL.resx">
+      <DependentUpon>FRM_PESINAT_AL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_PESINAT_IADE.resx">
+      <DependentUpon>FRM_PESINAT_IADE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_RAPOR_ARAMALAR.resx">
+      <DependentUpon>FRM_RAPOR_ARAMALAR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_RAPOR_ARAMALAR_EXCEL.resx">
+      <DependentUpon>FRM_RAPOR_ARAMALAR_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_RAPOR_ARAMALAR_YENI.resx">
+      <DependentUpon>FRM_RAPOR_ARAMALAR_YENI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_RAPOR_ARAMA_GUNCELLE.resx">
+      <DependentUpon>FRM_RAPOR_ARAMA_GUNCELLE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_RAPOR_CIKISLAR.resx">
+      <DependentUpon>FRM_RAPOR_CIKISLAR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_RAPOR_GENEL_KASA.resx">
+      <DependentUpon>FRM_RAPOR_GENEL_KASA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_RAPOR_KASA_DETAY.resx">
+      <DependentUpon>FRM_RAPOR_KASA_DETAY.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_RAPOR_YENI_CIKIS.resx">
+      <DependentUpon>FRM_RAPOR_YENI_CIKIS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_RAPOR_YENI_CIKIS_KULLANICI.resx">
+      <DependentUpon>FRM_RAPOR_YENI_CIKIS_KULLANICI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_SEVKIYAT_1.resx">
+      <DependentUpon>FRM_SEVKIYAT_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_SEVKIYAT_2.resx">
+      <DependentUpon>FRM_SEVKIYAT_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_SEVKIYAT_GUNCELLE.resx">
+      <DependentUpon>FRM_SEVKIYAT_GUNCELLE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_SEVKIYAT_LISTESI.resx">
+      <DependentUpon>FRM_SEVKIYAT_LISTESI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_SEVKIYAT_LISTESI_EXCEL.resx">
+      <DependentUpon>FRM_SEVKIYAT_LISTESI_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_SEVKIYAT_OLUSTUR.resx">
+      <DependentUpon>FRM_SEVKIYAT_OLUSTUR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_SHIFT_EXCEL.resx">
+      <DependentUpon>FRM_SHIFT_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_SIFRE_DEGISTIR.resx">
+      <DependentUpon>FRM_SIFRE_DEGISTIR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_TAKSIT.resx">
+      <DependentUpon>FRM_TAKSIT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_YENI_NOT.resx">
+      <DependentUpon>FRM_YENI_NOT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="iconfinder_Finance_safe_1889198.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
